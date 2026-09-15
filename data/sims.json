@@ -1,1 +1,182 @@
-
+[
+  {
+    "id": "HG001",
+    "number": "0988.668.688",
+    "network": "Viettel",
+    "type": "Dễ nhớ",
+    "category": "de-nho",
+    "price": 890000,
+    "status": "available",
+    "featured": true
+  },
+  {
+    "id": "HG002",
+    "number": "0977.999.777",
+    "network": "Viettel",
+    "type": "Tam hoa",
+    "category": "tam-hoa",
+    "price": 2900000,
+    "status": "available",
+    "featured": true
+  },
+  {
+    "id": "HG003",
+    "number": "0888.123.456",
+    "network": "VinaPhone",
+    "type": "Số tiến",
+    "category": "so-tien",
+    "price": 1500000,
+    "status": "available",
+    "featured": true
+  },
+  {
+    "id": "HG004",
+    "number": "0909.686.868",
+    "network": "MobiFone",
+    "type": "Gánh – lặp",
+    "category": "ganh-lap",
+    "price": 990000,
+    "status": "available",
+    "featured": false
+  },
+  {
+    "id": "HG005",
+    "number": "0986.666.668",
+    "network": "Viettel",
+    "type": "Tam hoa",
+    "category": "tam-hoa",
+    "price": 3900000,
+    "status": "available",
+    "featured": true
+  },
+  {
+    "id": "HG006",
+    "number": "0912.888.999",
+    "network": "VinaPhone",
+    "type": "Tứ quý",
+    "category": "tu-quy",
+    "price": 5200000,
+    "status": "available",
+    "featured": true
+  },
+  {
+    "id": "HG007",
+    "number": "0908.199.999",
+    "network": "MobiFone",
+    "type": "Năm sinh",
+    "category": "nam-sinh",
+    "price": 1800000,
+    "status": "available",
+    "featured": false
+  },
+  {
+    "id": "HG008",
+    "number": "0968.123.888",
+    "network": "Viettel",
+    "type": "Giá tốt",
+    "category": "gia-tot",
+    "price": 760000,
+    "status": "available",
+    "featured": false
+  },
+  {
+    "id": "HG009",
+    "number": "0868.999.999",
+    "network": "Viettel",
+    "type": "Ngũ quý",
+    "category": "ngu-quy",
+    "price": 8900000,
+    "status": "available",
+    "featured": true
+  },
+  {
+    "id": "HG010",
+    "number": "0899.123.456",
+    "network": "Vietnamobile",
+    "type": "Số tiến",
+    "category": "so-tien",
+    "price": 650000,
+    "status": "available",
+    "featured": false
+  },
+  {
+    "id": "HG011",
+    "number": "0918.888.666",
+    "network": "VinaPhone",
+    "type": "Tam hoa",
+    "category": "tam-hoa",
+    "price": 3100000,
+    "status": "available",
+    "featured": true
+  },
+  {
+    "id": "HG012",
+    "number": "0901.234.567",
+    "network": "MobiFone",
+    "type": "Dễ nhớ",
+    "category": "de-nho",
+    "price": 1200000,
+    "status": "available",
+    "featured": false
+  },
+  {
+    "id": "HG013",
+    "number": "0985.555.555",
+    "network": "Viettel",
+    "type": "Ngũ quý",
+    "category": "ngu-quy",
+    "price": 12500000,
+    "status": "available",
+    "featured": true
+  },
+  {
+    "id": "HG014",
+    "number": "0916.666.668",
+    "network": "VinaPhone",
+    "type": "Tam hoa",
+    "category": "tam-hoa",
+    "price": 2700000,
+    "status": "available",
+    "featured": false
+  },
+  {
+    "id": "HG015",
+    "number": "0903.246.888",
+    "network": "MobiFone",
+    "type": "Dễ nhớ",
+    "category": "de-nho",
+    "price": 950000,
+    "status": "available",
+    "featured": false
+  },
+  {
+    "id": "HG016",
+    "number": "0971.234.567",
+    "network": "Viettel",
+    "type": "Số tiến",
+    "category": "so-tien",
+    "price": 2200000,
+    "status": "available",
+    "featured": false
+  },
+  {
+    "id": "HG017",
+    "number": "0919.999.999",
+    "network": "VinaPhone",
+    "type": "Ngũ quý",
+    "category": "ngu-quy",
+    "price": 9900000,
+    "status": "available",
+    "featured": true
+  },
+  {
+    "id": "HG018",
+    "number": "0905.686.886",
+    "network": "MobiFone",
+    "type": "Gánh – lặp",
+    "category": "ganh-lap",
+    "price": 1350000,
+    "status": "available",
+    "featured": false
+  }
+]
