@@ -1,1 +1,15 @@
-
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Quản trị | SHOP SIM HOÀNG GIA</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="header"><div class="container nav"><a class="brand" href="index.html"><span>SHOP SIM</span><b>HOÀNG GIA</b></a><a class="adminBtn" href="index.html">← Về website</a></div></header>
+<main class="container adminPage">
+  <div class="adminHead"><div><div class="eyebrow dark">ADMIN DEMO</div><h1>Quản trị kho SIM</h1><p>Quản lý dữ liệu demo trên trình duyệt này.</p></div><button class="goldBtn" id="addSimBtn">+ Thêm SIM</button></div>
+  <div class="dashboard"><div><small>SIM còn hàng</small><b id="dashAvailable">0</b></div><div><small>Đã bán</small><b id="dashSold">0</b></div><div><small>Đơn mới</small><b id="dashOrders">0</b></div><div><small>Giá trị kho</small><b id="dashValue">0 đ</b></div></div>
+  <div class="tabs"><button class="active" data-tab="inventory">Kho SIM</button><button data-tab="orders">Đơn hàng</button><button data-tab="settings">Cài đặt</button></div>
+  <section id="inventory" class="adminTab active"><div class="tools"><input id="adminSearch" placeholder="Tìm số..."><button id="exportBtn">Xuất CSV</button><label>Nhập CSV<input id="importInput" type="file" accept=".csv" hidden></label><button id="resetBtn">Khôi phục mẫu</button></div><div class="tableWrap"><table><thead><tr><th>Mã</th><th>Số SIM</th><th>Nhà mạng</th><th>Dạng</th><th>Giá</th><th>Trạng thái</th><th>Thao tác</th></tr></thead><tbody id="inventoryTable"></tbody></table></div></section>
+  <section id="orders" class="adminTab"><div class="tableWrap"><table><thead><tr><th>Thời gian</th><th>SIM</th><th>Khách</th><th>SĐT</th><th>Ghi chú</th><th>Trạng thái</th></tr></thead><tbody id="ordersTable"></tbody></table></div></section>
+  <section id="settings" class="adminTab"><div class="settings"><label>Tên shop<input id="shopName"></label><label>Hotline<input id="shopPhone" placeholder="09xxxxxxxx"></label><label>Zalo<input id="shopZalo" placeholder="Số hoặc link Zalo"></label><button class="goldBtn" id="saveSettings">Lưu cài đặt</button></div></section>
+</main>
+<div id="modal" class="modal"><div class="modalBox"><button class="modalClose" id="modalClose">×</button><div id="modalBody"></div></div></div><div id="toast" class="toast"></div>
+<script src="js/admin.js"></script>
+</body></html>
