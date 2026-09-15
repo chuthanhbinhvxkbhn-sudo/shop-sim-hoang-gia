@@ -1,1 +1,119 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SHOP SIM HOÀNG GIA | SIM số đẹp</title>
+<meta name="description" content="SHOP SIM HOÀNG GIA - kho SIM số đẹp, tìm kiếm nhanh, tư vấn và đăng ký mua SIM.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="toast" class="toast"></div>
 
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="#"><span>SHOP SIM</span><b>HOÀNG GIA</b></a>
+    <nav>
+      <a href="#kho">Kho SIM</a>
+      <a href="#danh-muc">Danh mục</a>
+      <a href="#ai">AI tư vấn</a>
+      <a href="#quy-trinh">Quy trình</a>
+    </nav>
+    <div class="navRight">
+      <button class="cartBtn" id="cartBtn">🛒 <span id="cartCount">0</span></button>
+      <a class="adminBtn" href="admin.html">⚙ Quản trị</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container heroGrid">
+    <div>
+      <div class="eyebrow">👑 SIM SỐ ĐẸP • GIÁ MINH BẠCH</div>
+      <h1>Chọn số đẹp.<br><em>Chốt đơn nhanh.</em></h1>
+      <p class="heroText">Tìm SIM theo số, nhà mạng, dạng số và ngân sách. Khách có thể tự tìm hoặc nhờ trợ lý Hoàng Gia gợi ý.</p>
+      <div class="searchBox">
+        <input id="searchInput" placeholder="Nhập số: 0988, 6868, 9999...">
+        <select id="networkFilter">
+          <option value="">Tất cả nhà mạng</option><option>Viettel</option><option>VinaPhone</option><option>MobiFone</option><option>Vietnamobile</option>
+        </select>
+        <select id="priceFilter">
+          <option value="">Tất cả mức giá</option><option value="500000">Dưới 500K</option><option value="1000000">Dưới 1 triệu</option><option value="3000000">Dưới 3 triệu</option><option value="10000000">Dưới 10 triệu</option>
+        </select>
+        <button class="goldBtn" id="searchBtn">Tìm SIM</button>
+      </div>
+      <div class="quickTags">
+        <button data-category="">Tất cả</button><button data-category="tam-hoa">Tam hoa</button><button data-category="tu-quy">Tứ quý</button><button data-category="ngu-quy">Ngũ quý</button><button data-category="so-tien">Số tiến</button><button data-category="de-nho">Dễ nhớ</button>
+      </div>
+    </div>
+    <div class="showcase">
+      <div class="crown">♛</div>
+      <small>SIM NỔI BẬT</small>
+      <strong>0988.668.688</strong>
+      <em>890.000 đ</em>
+      <span>Viettel • Dễ nhớ</span>
+      <button class="lightBtn" onclick="document.getElementById('kho').scrollIntoView()">Xem kho SIM</button>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="container trustGrid">
+    <div><b>Kho SIM rõ ràng</b><small>Giá và trạng thái hiển thị</small></div>
+    <div><b>Tìm số nhanh</b><small>Lọc theo nhu cầu</small></div>
+    <div><b>AI tư vấn</b><small>Gợi ý từ kho đang có</small></div>
+    <div><b>Quản trị kho</b><small>Thêm, sửa, bán, CSV</small></div>
+  </div>
+</section>
+
+<main class="container">
+<section id="danh-muc" class="section">
+  <div class="sectionTitle"><div><div class="eyebrow dark">DANH MỤC</div><h2>Chọn kiểu số yêu thích</h2></div></div>
+  <div class="categoryGrid">
+    <button data-category="tam-hoa"><b>666 • 777 • 888</b><span>Tam hoa</span></button>
+    <button data-category="tu-quy"><b>8888 • 9999</b><span>Tứ quý</span></button>
+    <button data-category="ngu-quy"><b>55555 • 99999</b><span>Ngũ quý</span></button>
+    <button data-category="so-tien"><b>123456 • 345678</b><span>Số tiến</span></button>
+    <button data-category="de-nho"><b>6868 • 6688</b><span>Dễ nhớ</span></button>
+    <button data-category="nam-sinh"><b>1990 • 1999</b><span>Năm sinh</span></button>
+  </div>
+</section>
+
+<section id="kho" class="section">
+  <div class="sectionTitle">
+    <div><div class="eyebrow dark">KHO SIM</div><h2>SIM đang có sẵn</h2><p id="resultInfo"></p></div>
+    <div class="titleActions"><select id="sortFilter"><option value="featured">Nổi bật</option><option value="low">Giá thấp → cao</option><option value="high">Giá cao → thấp</option></select><button class="outlineBtn" id="clearFilter">Xóa lọc</button></div>
+  </div>
+  <div id="simGrid" class="simGrid"></div>
+</section>
+
+<section id="ai" class="section aiSection">
+  <div class="aiIntro">
+    <div class="eyebrow dark">TRỢ LÝ HOÀNG GIA</div>
+    <h2>🤖 AI tư vấn chọn SIM</h2>
+    <p>Nhập nhu cầu tự nhiên. Demo này sẽ lọc trực tiếp từ kho SIM mẫu đang có.</p>
+    <div class="promptChips">
+      <button data-prompt="Viettel dưới 2 triệu, dễ nhớ">Viettel dưới 2 triệu</button>
+      <button data-prompt="Tứ quý khoảng 6 triệu">Tứ quý ~6 triệu</button>
+      <button data-prompt="Số tiến dưới 1 triệu">Số tiến dưới 1 triệu</button>
+    </div>
+  </div>
+  <div class="chatCard">
+    <div id="chat" class="chat"><div class="bubble bot">Xin chào 👑 Tôi là trợ lý SHOP SIM HOÀNG GIA. Hãy nói ngân sách, nhà mạng hoặc kiểu số bạn muốn.</div></div>
+    <div class="chatBar"><input id="aiInput" placeholder="Ví dụ: VinaPhone dưới 3 triệu, tam hoa"><button class="goldBtn" id="aiSend">Gửi</button></div>
+  </div>
+</section>
+
+<section id="quy-trinh" class="section process">
+  <div><b>01</b><h3>Tìm số</h3><p>Lọc theo số, nhà mạng, dạng số và ngân sách.</p></div>
+  <div><b>02</b><h3>Chọn & gửi yêu cầu</h3><p>Nhập thông tin khách để shop liên hệ.</p></div>
+  <div><b>03</b><h3>Xác nhận</h3><p>Shop kiểm tra tình trạng và hướng dẫn giao dịch.</p></div>
+</section>
+</main>
+
+<footer><div class="container footer"><div><a class="brand"><span>SHOP SIM</span><b>HOÀNG GIA</b></a><p>Kho SIM số đẹp • Tìm số nhanh • Tư vấn tận tâm</p></div><div><b>Liên hệ</b><p>Hotline: <span id="footerPhone">Chưa cấu hình</span><br>Zalo: <span id="footerZalo">Chưa cấu hình</span></p></div></div></footer>
+
+<div id="modal" class="modal"><div class="modalBox"><button class="modalClose" id="modalClose">×</button><div id="modalBody"></div></div></div>
+<script src="js/app.js"></script>
+</body>
+</html>
